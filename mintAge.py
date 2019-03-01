@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import os, json, sys
 
-# !!!This file operates against an unlocked wallet!!! Did you read the every line?
+# !!!This file operates against an unlocked wallet!!! Did you read the every line?  
+# You'll probably need to update the binary paths
 
 try:
         confirms = int(sys.argv[1])
@@ -10,8 +11,8 @@ except:
         print('1 integer argument required for this script.  Exiting...')
         sys.exit(2)
 
-block = os.popen('~/Downloads/veil-1.0.1.4/bin/veil-cli getblockcount').read()
-var = os.popen('~/Downloads/veil-1.0.1.4/bin/veil-cli listmintedzerocoins true').read()
+block = os.popen('~/Downloads/veil-1.0.2/bin/veil-cli getblockcount').read()
+var = os.popen('~/Downloads/veil-1.0.2/bin/veil-cli listmintedzerocoins true').read()
 
 if block:
     if var:
