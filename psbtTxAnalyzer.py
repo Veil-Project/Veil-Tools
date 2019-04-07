@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+#Run decodepsbt on a psbt blob, save the output to a file, and then supply that filename or path as an argument to this script
+
 import os, json, sys
 
 try:
